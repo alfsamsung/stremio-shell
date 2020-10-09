@@ -1,6 +1,7 @@
 #include <QQmlApplicationEngine>
 #include <QtWebEngine>
 #include <QSysInfo>
+#include <QOperatingSystemVersion>
 
 #include <clocale>
 
@@ -46,6 +47,14 @@ void InitializeParameters(QQmlApplicationEngine& engine, MainApp& app) {
 
 int main(int argc, char **argv)
 {
+    // Hack for MacOS Big Sur
+    if(QOperatingSystemVersion::currentType() == QOperatingSystemVersion::MacOS && (
+        (QOperatingSystemVersion::majorVersion() == 10 && QOperatingSystemVersion::minorVersion() == 16) ||
+        (QOperatingSystemVersion::majorVersion() == 11 && QOperatingSystemVersion::minorVersion() == 0)
+    )) {
+        qputenv("QSG_RENDER_LOOP", "basic");
+    }
+
     #ifdef _WIN32
     // Default to ANGLE (DirectX), because that seems to eliminate so many issues on Windows
     // Also, according to the docs here: https://wiki.qt.io/Qt_5_on_Windows_ANGLE_and_OpenGL, ANGLE is also preferrable
