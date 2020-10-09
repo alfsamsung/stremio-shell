@@ -47,10 +47,11 @@ void InitializeParameters(QQmlApplicationEngine& engine, MainApp& app) {
 
 int main(int argc, char **argv)
 {
+    auto osversion = QOperatingSystemVersion::current();
     // Hack for MacOS Big Sur
-    if(QOperatingSystemVersion::currentType() == QOperatingSystemVersion::MacOS && (
-        (QOperatingSystemVersion::majorVersion() == 10 && QOperatingSystemVersion::minorVersion() == 16) ||
-        (QOperatingSystemVersion::majorVersion() == 11 && QOperatingSystemVersion::minorVersion() == 0)
+    if(osversion.type() == QOperatingSystemVersion::MacOS && (
+        (osversion.majorVersion() == 10 && osversion.minorVersion() == 16) ||
+        (osversion.majorVersion() == 11 && osversion.minorVersion() == 0)
     )) {
         qputenv("QSG_RENDER_LOOP", "basic");
     }
