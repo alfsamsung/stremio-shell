@@ -168,6 +168,10 @@ done:
 FunctionEnd
 
 Section ; App Files
+    ; Sleep 3 seconds to ensure stremio has quit (if we are autoupdating)
+    ; the quitApp() call in main.qml waits 2.5 seconds for the server
+    Sleep 2000
+
     check:
     ; Check if stremio.exe is running
     ${nsProcess::FindProcess} "stremio.exe" $R0
