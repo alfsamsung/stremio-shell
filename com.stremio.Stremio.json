@@ -48,8 +48,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://nodejs.org/dist/latest-v8.x/node-v8.17.0-linux-x64.tar.gz",
-          "sha256": "8b2c9e1f84317c4b02736c4c50db4dd2cd6c4f0ba910fa81f887c8c9294af596"
+          "url": "https://nodejs.org/dist/v14.15.0/node-v14.15.0-linux-x64.tar.gz",
+          "sha256": "085c3b3c262fa58cbaad4f2f62eb6cea943fbbf3492ba457b5efa8f27969e04a"
         }
       ]
     },
@@ -81,8 +81,8 @@
         },
         {
           "type": "file",
-          "url": "https://dl.strem.io/four/v4.4.108/server.js",
-          "sha256": "35397d574282980c5b3a73f475f2e5bb6cc6d7919d3e6d23e8f737cd9d1c986f"
+          "url": "https://dl.strem.io/four/v4.4.120/server.js",
+          "sha256": "241f5633528e9f19c84c7ca41266771c309e286d6d9393a99e0fbce2203a3caa"
         },
         {
           "type": "file",
@@ -118,13 +118,13 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.31.0.tar.gz",
-              "sha256": "805a3ac8cf51bfdea6087a6480c18835101da0355c8e469b6d488a1e290585a5"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.32.0.tar.gz",
+              "sha256": "9163f64832226d22e24bbc4874ebd6ac02372cd717bef15c28a0aa858c5fe592"
             },
             {
               "type": "file",
-              "url": "https://waf.io/waf-2.0.19",
-              "sha256": "ba63c90a865a9bcf46926c4e6776f9a3f73d29f33d49b7f61f96bc37b7397cef",
+              "url": "https://waf.io/waf-2.0.20",
+              "sha256": "bf971e98edc2414968a262c6aa6b88541a26c3cd248689c89f4c57370955ee7f",
               "dest-filename": "waf"
             }
           ],
@@ -149,8 +149,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.16.8.tar.bz2",
-                  "sha256": "84346bf200bd30efb8a80a65ded1b81d39ae7e0ff2272e98f478b4eee8f40d13"
+                  "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.20.0.tar.bz2",
+                  "sha256": "956118713f7ccb405c55c7088a6a2490c32d54300dd9a30d8d5008c28d3726f7"
                 }
               ],
               "modules": [
@@ -170,7 +170,7 @@
                 {
                   "type": "git",
                   "url": "https://git.videolan.org/git/ffmpeg/nv-codec-headers.git",
-                  "commit": "40e7dd3f646f303e584da1951a4840414a0ace4d"
+                  "branch": "master"
                 }
               ]
             },
@@ -195,8 +195,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz",
-                  "sha256": "cb754255ab0ee2ea5f66f8850e1bd6ad5cac1cd855d0a2f4990fb8c668b0d29c"
+                  "url": "https://ffmpeg.org/releases/ffmpeg-4.3.tar.xz",
+                  "sha256": "1d0ad06484f44bcb97eba5e93c40bcb893890f9f64aeb43e46cd9bb4cbd6795d"
                 }
               ]
             },
@@ -224,8 +224,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://github.com/libass/libass/releases/download/0.14.0/libass-0.14.0.tar.xz",
-                  "sha256": "881f2382af48aead75b7a0e02e65d88c5ebd369fe46bc77d9270a94aa8fd38a2"
+                  "url": "https://github.com/libass/libass/releases/download/0.15.0/libass-0.15.0.tar.xz",
+                  "sha256": "9f09230c9a0aa68ef7aa6a9e2ab709ca957020f842e52c5b2e52b801a7d9e833"
                 }
               ]
             },
@@ -245,8 +245,8 @@
               "sources": [
                 {
                   "type": "archive",
-                  "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.6.tar.xz",
-                  "sha256": "8351328cdfbcb2432e63938721dd781eb8c11ebc56e3a89d0f84576b96002c61"
+                  "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.7.tar.xz",
+                  "sha256": "3fc79408ae1d84b406922fa9319ce005631c95ca0f34b205fad867e8b30e45b1"
                 }
               ]
             }
