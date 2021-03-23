@@ -58,6 +58,9 @@ int main(int argc, char **argv)
 
     Application::setAttribute(Qt::AA_UseOpenGLES);
     auto winVer = QSysInfo::windowsVersion();
+    if(winVer <= QSysInfo::WV_WINDOWS8 && winVer != QSysInfo::WV_None) {
+        qputenv("NODE_SKIP_PLATFORM_CHECK", "1");
+    }
     if(winVer <= QSysInfo::WV_WINDOWS7 && winVer != QSysInfo::WV_None) {
         qputenv("QT_ANGLE_PLATFORM", "d3d9");
     }
